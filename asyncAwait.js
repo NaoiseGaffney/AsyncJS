@@ -41,10 +41,10 @@ async function init () {
 init();
 
 // Async / Await: Fetch().then().catch()
-async function fecthUsers () {
+async function fetchUsers () {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await response.json(); // Map response to data.
     console.log(data);
 }
 
-fecthUsers();
+fetchUsers();
